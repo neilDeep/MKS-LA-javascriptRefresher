@@ -2,7 +2,9 @@
 // Songs can also be reordered in the playlist.
 
 // create a Playlist Object
-var Playlist = new Library();
+function Playlist() {
+	Library.call(this);
+}
 
 Playlist.prototype = {
 	storage: [],
