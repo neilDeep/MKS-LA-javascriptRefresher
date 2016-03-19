@@ -1,0 +1,25 @@
+var musicPlayerApp = {
+
+	init: function () {
+		
+
+
+
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
