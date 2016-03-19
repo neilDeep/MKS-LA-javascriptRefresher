@@ -16,3 +16,61 @@
 // All other implementation details will be left to you.
 
 // NOTE: you do NOT need to build any user interface (UI), it just needs to work within the console. 
+
+function musicPlayer() {
+	
+	var Library = []; // Array of Song Objects
+	var Playlist= []; // Array of Song Objects
+	var Song = { // Song Object w/ Required Properties
+		title: "",
+		artist: "",
+		album: "",
+		coverArt: // img src link,
+	}; 
+
+	function addSongToLibrary(song){
+
+	}
+
+	function removeSongFromLibrary(song){
+
+	}
+
+	function addSongToPlaylist(song){
+
+	}
+
+	function removeSongFromPlaylist(song){
+
+	}
+
+	function shuffle(Playlist){
+
+	}
+
+	function playSong(song){
+
+	}
+
+	function stopSong(song){
+
+	}
+
+	function nextSong(song){
+
+	}
+
+	return { // musicPlayer Public API 
+
+		addSongToLibrary: addSongToLibrary,
+		removeSongFromLibrary: removeSongFromLibrary,
+		addSongToPlaylist: addSongToPlaylist,
+		removeSongFromPlaylist: removeSongFromPlaylist,
+		shuffle: shuffle,
+		playSong: playSong,
+		stopSong: stopSong,
+		nextSong: nextSong
+
+	};
+
+}
