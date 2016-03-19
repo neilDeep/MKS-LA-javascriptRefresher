@@ -1,0 +1,31 @@
+#consoleTextColor {
+	color: #00ccff;
+}
+#javaScript {
+	color: #ff0000;
+}
+#welcome {
+	color: #006600;
+}
+#disclaimer {
+	color: #ff0000;
+}
+#instructions {
+	color: #663300;
+}
+#coverartDivLibrary {
+
+}
+#coverartTableLibrary {
+	
+}
+#coverartDivPlaylist {
+
+}
+#coverartTablePlaylist {
+
+}
+
+.header {
+	font-weight: bold
+}

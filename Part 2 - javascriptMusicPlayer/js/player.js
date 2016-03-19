@@ -4,7 +4,8 @@ function Player ()
 
 Player.prototype = {
 	currentSong: undefined,
-	playSong: function (song.title){
+	playSong: function (title){
+		title = song.title;
 		for(var i=0; i<Playlist.storage.length; i++){
 			for(var key in Playlist.storage[i]) {
 				if (song.title === key){

@@ -5,14 +5,53 @@
     <script src="js/library.js"></script>
     <script src="js/playlist.js"></script>
     <script src="js/song.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="musicPlayer.css">
   </head>
   <body>
-    <h1>Console Music Player</h1>
     <script type="text/javascript">
       $(function(){
         app.init();
       });
     </script>
 
+    <h1> <span id="welcome">Welcome To</span> <span id="javaScript">javaScript</span> <span id="consoleTextColor">Console</span> <span id="welcome">musicPlayer!</span></h1>
+
+    <h2>About the Player</h2>
+
+    <p>The app has been initialized as soon as the document was ready! Read the following instructions on how to create a new song and "play"/"pause"/"stop" it within the console.</p>
+
+    <p id="disclaimer">*DISCLAIMER*</p>
+    <p>Sorry to get your hopes up, but no music actually plays here. This "app" is simply a javascript exercise exhibiting my competence within the language.</p>
+    <p>But feel free to checkout my <a href="https://github.com/neilDeep/MKS-LA-javascriptRefresher-Solution">GitHub Repo</a> containing the code used to build it! If you have any suggestions/edits let, me know there! Thank You.</p>
+
+    <p id="instructions">INSTRUCTIONS: (within<span id="consoleTextColor">Console</span>)</p>
+    <p class="header">Create A Song & addToLibrary:<p>
+    <p>musicPlayerApp.addToLibrary('title', 'artist', 'album', coverartURL);<p>
+    <p class="header">removeFromLibrary:<p>
+    <p>musicPlayerApp.removeFromLibrary('title');<p>
+    <p class="header">addToPlaylist:<p>
+    <p>musicPlayerApp.addToPlaylist('title');<p>
+    <p class="header">removeFromPlaylist:<p>
+    <p>musicPlayerApp.removeToPlaylist('title');<p>
+    <p class="header">shufflePlaylist</p>
+    <p >musicPlayerApp.shufflePlaylist();<p>
+    <p class="header">playSong</p>
+    <p>musicPlayerApp.playSong('title');</p>
+    <p class="header">pauseSong</p>
+    <p>musicPlayerApp.pauseSong();</p>
+    <p class="header">playnextSong</p>
+    <p>musicPlayerApp.playnextSong();</p>
+
+    <div id="coverartDivLibrary">
+      <h4 class="header">Library</h4>
+      <table id="coverartTableLibrary">
+      </table>
+    </div>
+    <div id="coverartDivPlaylist">
+      <h4 class="header">PlayList</h4>
+    <table id="coverartTablePlaylist">
+    </table>
+    </div>
   </body>
 </html>

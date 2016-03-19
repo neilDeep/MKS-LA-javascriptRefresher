@@ -6,16 +6,19 @@ var Playlist = new Library();
 
 Playlist.prototype = {
 	storage: [];
-	addToPlaylist: function(song.title) {
+	addToPlaylist: function(title) {
+		title = song.title;
 		for(var i=0;i<Library.storage.length;i++){
 			if (song.title === Library.storage[i]){
 				Playlist.storage.push(Library.storage[i]);
+				$("#coverartTablePlaylist").addChild('<td><img src=' + this.coverArt +'/></td>');
 			} else {
 				alert('Error404: Song Not Found Within Library!');
 			}
 		}
 	},
-	removeFromPlaylist: function(song.title){
+	removeFromPlaylist: function(title){
+		title = song.title;
 		for(vari=0;i<Playlist.storage.length;i++){
 			if(song.title === Playlist.storage.length[i]){
 				Playlist.storage[i] = undefined;

@@ -1,9 +1,9 @@
 // A library can have songs added/removed and cannot have duplicates
 
-function Library ()
+var Libary = {};
 
 Library.prototype = {
-	storage: [];
+	storage: [],
 	addToLibrary: function(title, artist, album, coverArtURL){
 		// create a new song with user inputs
 		var newSong = Song(title, artist, album, coverArtURL);
@@ -16,7 +16,8 @@ Library.prototype = {
 			}
 		}
 	},
-	removeFromLibrary: function(song.title){
+	removeFromLibrary: function(title){
+		var title = song.title;
 		for(var i=0;i<Library.storage.length;i++){
 			if (song.title === Library.storage[i]){
 				Library.storage[i] = undefined;

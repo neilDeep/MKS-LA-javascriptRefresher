@@ -5,6 +5,8 @@ function Song (title,artist,album,coverArtURL) {
 	song.title: title;
 	song.artist: artist;
 	song.album: album;
-	song.coverArt: coverArtURL;
+	song.coverArt: function(){
+		$('#coverartTableLibrary').addChild('<td><img src=' + coverArtURL +'/></td>');
+	};
 	return song;
 }
