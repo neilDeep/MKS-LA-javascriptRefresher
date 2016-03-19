@@ -5,7 +5,7 @@
 var Playlist = new Library();
 
 Playlist.prototype = {
-	storage: [];
+	storage: [],
 	addToPlaylist: function(title) {
 		title = song.title;
 		for(var i=0;i<Library.storage.length;i++){

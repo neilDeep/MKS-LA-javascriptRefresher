@@ -7,7 +7,7 @@ var musicPlayerApp = {
 	var myPlaylist = new Playlist(); 
 
 	//Helper Functions
-	addToLibrary: Library.addToLibrary();
+	function addToLibrary() {Library.addToLibrary();}
 	function addToPlaylist() {Playlist.addToPlaylist();}
 	function removeFromLibrary() {Library.removeFromLibrary();}
 	function removeFromPlaylist() {Playlist.removeFromPlaylist();}

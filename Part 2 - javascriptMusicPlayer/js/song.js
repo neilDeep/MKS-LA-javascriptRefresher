@@ -2,10 +2,10 @@
 
 function Song (title,artist,album,coverArtURL) {
 	var song = {};
-	song.title: title;
-	song.artist: artist;
-	song.album: album;
-	song.coverArt: function(){
+	song.title= title;
+	song.artist= artist;
+	song.album= album;
+	song.coverArt= function(){
 		$('#coverartTableLibrary').addChild('<td><img src=' + coverArtURL +'/></td>');
 	};
 	return song;

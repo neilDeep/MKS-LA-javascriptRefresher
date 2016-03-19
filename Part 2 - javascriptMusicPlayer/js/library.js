@@ -1,6 +1,6 @@
 // A library can have songs added/removed and cannot have duplicates
 
-var Libary = {};
+function Library() {}
 
 Library.prototype = {
 	storage: [],

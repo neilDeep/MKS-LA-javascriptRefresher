@@ -1,6 +1,6 @@
 // Use player controls stop/start/next to change the current song in the player
 
-function Player ()
+function Player() {}
 
 Player.prototype = {
 	currentSong: undefined,
