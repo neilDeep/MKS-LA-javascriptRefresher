@@ -1,18 +1,18 @@
 <html>
   <head>
     <title>Music Player</title>
+    <script src="jquery.js"></script>
     <script src="js/app.js"></script>
     <script src="js/library.js"></script>
     <script src="js/playlist.js"></script>
      <script src="js/player.js"></script>
     <script src="js/song.js"></script>
-    <script src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="musicPlayer.css">
   </head>
   <body>
     <script type="text/javascript">
       $(function(){
-        musicPlayerApp.init();
+        var musicAPI = musicPlayerApp.init();
       });
     </script>
 
@@ -28,21 +28,21 @@
 
     <p id="instructions">INSTRUCTIONS: (within <span id="consoleTextColor">Console</span>)</p>
     <p class="header">Create A Song & addToLibrary:<p>
-    <p>musicPlayerApp.addToLibrary('title', 'artist', 'album', coverArtURL);<p>
+    <p>musicAPI.addToLibrary('title', 'artist', 'album', coverArtURL);<p>
     <p class="header">removeFromLibrary:<p>
-    <p>musicPlayerApp.removeFromLibrary('title');<p>
+    <p>musicAPI.removeFromLibrary('title');<p>
     <p class="header">addToPlaylist:<p>
-    <p>musicPlayerApp.addToPlaylist('title');<p>
+    <p>musicAPI.addToPlaylist('title');<p>
     <p class="header">removeFromPlaylist:<p>
-    <p>musicPlayerApp.removeToPlaylist('title');<p>
+    <p>musicAPI.removeToPlaylist('title');<p>
     <p class="header">shufflePlaylist</p>
-    <p >musicPlayerApp.shufflePlaylist();<p>
+    <p >musicAPI.shufflePlaylist();<p>
     <p class="header">playSong</p>
-    <p>musicPlayerApp.playSong('title');</p>
+    <p>musicAPI.playSong('title');</p>
     <p class="header">pauseSong</p>
-    <p>musicPlayerApp.pauseSong();</p>
+    <p>musicAPI.pauseSong();</p>
     <p class="header">playnextSong</p>
-    <p>musicPlayerApp.playnextSong();</p>
+    <p>musicAPI.playnextSong();</p>
 
     <div id="coverartDivLibrary">
       <h4 class="header">Library</h4>

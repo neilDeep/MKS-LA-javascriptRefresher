@@ -4,38 +4,42 @@
 // create a Playlist Object
 function Playlist() {
 	Library.call(this);
+	this.storage= [];
 }
 
-Playlist.prototype = {
-	storage: [],
-	addToPlaylist: function(title) {
-		title = song.title;
-		for(var i=0;i<Library.storage.length;i++){
-			if (song.title === Library.storage[i]){
-				Playlist.storage.push(Library.storage[i]);
-				$("#coverartTablePlaylist").addChild('<td><img src=' + this.coverArt +'/></td>');
+Playlist.prototype.addToPlaylist= function(title) {
+		var songTitle = title;
+		var contains = false;
+		for(var i=0;i<this.storage.length;i++){
+			if (songTitle === this.storage[i].title){
+				this.storage.push(this.storage[i]);
+				console.log(this.storage[i]);
+				contains = true;
+				$("#coverartTablePlaylist").append('<td><img src=' + this.coverArt +'/></td>');
 			} else {
 				alert('Error404: Song Not Found Within Library!');
 			}
 		}
-	},
-	removeFromPlaylist: function(title){
-		title = song.title;
-		for(vari=0;i<Playlist.storage.length;i++){
-			if(song.title === Playlist.storage.length[i]){
-				Playlist.storage[i] = undefined;
+	};
+
+Playlist.prototype.removeFromPlaylist= function(title) {
+		var songTitle = title;
+		for(vari=0;i<this.storage.length;i++){
+			if(songTitle === this.storage.length[i].title){
+				this.storage[i] = undefined;
+				console.log('removed song from Playlist');
 			} else {
 				alert('Error404: Song Not Found Within Playlist!')
 			}
 		}
-	},
-	shuffle: function (){
-		for (var i = Playlist.storage.length; i; i -= 1) {
+	};
+
+Playlist.prototype.shuffle= function () {
+		for (var i = this.storage.length; i; i -= 1) {
 			var j, x;
         	j = Math.floor(Math.random() * i);
-        	x = Playlist.storage[i - 1];
-        	Playlist.storage[i - 1] = Playlist.storage[j];
-        	Playlist.storage[j] = x;
+        	x = this.storage[i - 1];
+        	this.storage[i - 1] = this.storage[j];
+        	this.storage[j] = x;
     	}
-	}
-};
+	};
